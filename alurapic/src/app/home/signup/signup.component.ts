@@ -5,7 +5,7 @@ import { UserNotTakenValidatorService } from './user-not-taken.validator.service
 import { NewUser } from './new-user';
 import { SignupService } from './signup.service';
 import { Router } from '@angular/router';
-import { PLatformDetectorService } from 'src/app/core/platform/platform-detector.service';
+import { PlatformDetectorService } from 'src/app/core/platform/platform-detector.service';
 
 @Component({
     templateUrl: './signup.component.html',
@@ -21,7 +21,7 @@ export class SignupComponent implements OnInit{
         private userNotTakenValidatorService: UserNotTakenValidatorService,
         private signupService: SignupService,
         private router: Router,
-        private platformDetectorService: PLatformDetectorService
+        private platformDetectorService: PlatformDetectorService
     ){}
     
     ngOnInit(): void {
